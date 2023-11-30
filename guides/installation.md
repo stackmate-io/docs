@@ -1,5 +1,9 @@
 # Installation
 
+{% hint style="info" %}
+If you need to make stackmate instantly available to your team's workflow without having to install anything, perhaps you should check our [Cloud](https://stackmate.io/cloud/) version. We offer a **trial of 7 days** and **no credit card** is required.
+{% endhint %}
+
 Installing stackmate is a simple, straight forward process where all you need is an `npm` client such as `npm` itself or `yarn`
 
 ### Installation as a global package through NPM
@@ -23,7 +27,7 @@ yarn global add @stackmate/cli
 We recommend that you install stackmate globally, however if you don't want to or if you just wanna give it a quick spin, feel free to run the package directly through `npx` using the following command:
 
 ```
-npx @stckmate/cli [init / deploy/ ...] [...options]
+npx @stckmate/cli [preview / deploy ...] <environment> [...options]
 ```
 
 {% hint style="info" %}

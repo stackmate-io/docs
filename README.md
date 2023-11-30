@@ -12,6 +12,10 @@ Stackmate was built with the busy developer in mind. It's for people who want to
 
 ### How does it work?
 
+{% hint style="info" %}
+Working with stackmate through the command line, requires a little bit of familiarity with AWS beforehand. If you don't feel comfortable managing your infrastructure with the command line tool, perhaps the [Cloud](https://stackmate.io/cloud/) version would be more interesting and easier to use. We offer a **trial of 7 days** and **no credit card** is required.
+{% endhint %}
+
 Stackmate uses an extremely simple configuration file either in JSON or YAML format. Before you read on, let us re-assure you that we are fully aware that people hate YAML with a burning passion and that's why we kept it very very **very** simple, by providing sane defaults for the services deployed.
 
 After you create the configuration file, you may use the `deploy` command to provision your cloud resources on the cloud provider of choice (\* we currently only support AWS but there's more to come):

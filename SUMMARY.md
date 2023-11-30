@@ -5,8 +5,8 @@
 * [Introduction](README.md)
 * [Quick Start](guides/quick-start.md)
 * [Installation](guides/installation.md)
-* [Output files](guides/output-files.md)
 * [Configuration](guides/configuration.md)
+* [Output files](guides/output-files.md)
 
 ## Configuration
 

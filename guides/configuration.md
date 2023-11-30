@@ -1,5 +1,9 @@
 # Configuration
 
+{% hint style="info" %}
+[Stackmate Cloud](https://stackmate.io/cloud/) replaces the configuration file and command line with a simple to use interface and automatic deployments. We offer a **trial of 7 days** and **no credit card** is required.
+{% endhint %}
+
 Stackmate uses a really simple configuration file that describes your infrastructure and resides in your application's directory.  It is advised to store it along with your application's code and commit it in source control so that you can track your infrastructure's changes consistently.
 
 The configuration file can be either a YAML or JSON file and examples are provided in the stackmate repository under the [examples](https://github.com/stackmate-io/stackmate/blob/main/examples) directory.
