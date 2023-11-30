@@ -8,22 +8,19 @@ The reasoning behind Stackmate is that most of the times, all developers want is
 
 ### Who is Stackmate for?
 
-Stackmate was built with the busy developer in mind. People who want to deploy an average traffic website that depends on a database and a few complementary services, without getting lost in their cloud provider's console or documentation.
+Stackmate was built with the busy developer in mind. It's for people who want to deploy an average traffic website, that depends on a database and a few complementary services, without spending a lifetime in complex consoles or developer tools.
 
 ### How does it work?
 
-Stackmate uses an extremely simple configuration file either in JSON or YAML format. Before you read on, let us re-assure you that we are fully aware that people hate YAML with a burning passion. That's why we do two things with said file:
+Stackmate uses an extremely simple configuration file either in JSON or YAML format. Before you read on, let us re-assure you that we are fully aware that people hate YAML with a burning passion and that's why we kept it very very **very** simple, by providing sane defaults for the services deployed.
 
-* Stackmate **generates it automatically** for you and
-* We kept it very very **very** simple.
+After you create the configuration file, you may use the `deploy` command to provision your cloud resources on the cloud provider of choice (\* we currently only support AWS but there's more to come):
 
-After you generate (and modify, if necessary) the configuration file, you may use the `deploy` command to provision your cloud resources on the provider of choice. The deployment process works as follows:
-
-* Stackmate will build the [Terraform](https://www.terraform.io/) configuration for the selected stage (eg. `production`)
-* The generated [Terraform](https://www.terraform.io/) configuration will be stored in the project's folder by default, or any other folder you decide to specify
-* It will ask you to provide the credentials or stored cloud provider profile, for example, an [AWS profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html) stored on your `~/.aws/config` file
-* Stackmate will use your system's Terraform executable to provision your cloud resources and store
-* It will store the [Terraform State](https://www.terraform.io/language/state/remote) to a secure location (either AWS S3, Terraform Cloud or any remote which is considered safe)
+* Stackmate will build the [Terraform](https://www.terraform.io/) configuration for the selected environment (eg. `production`).
+* The generated [Terraform](https://www.terraform.io/) configuration will be stored in the project's folder (for example under `stacks/production/main.tf.json`).
+* You don't need to provide your AWS credentials in your configuration, you can use environment variables or an [AWS profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html) stored on your `~/.aws/config` file.
+* Stackmate will trigger CDKTF which will look for your system's Terraform executable to provision your cloud resources
+* It will store the [Terraform State](https://www.terraform.io/language/state/remote) to the corresponding location as per your configuration.
 * It will store random generated secrets to a secure remote location (for example AWS Secrets Manager) so that you can securely view and rotate them.
 
 Once your stack has successfully been deployed, any modifications you make on the configuration file, will be reflected on your cloud infrastructure the next time you re-run the `deploy` command and any resource deleted from the configuration, will also be destroyed once you re-deploy.

@@ -1,6 +1,6 @@
 # provider
 
-The `provider` configuration option is the default cloud provider to use for services launched, state and secret storage unless specified otherwise. This practically means that the value you specify for the `provider` configuration option is the only one required across the configuration file, if you plan to use only one provider for everything: services, state and secrets storage.
+The `provider` configuration option is the default cloud provider to use for services launched, state and secret storage unless specified otherwise. This practically means that the value you specify for the `provider` configuration option is the only one required across the configuration file, if you plan to use only one provider for everything: environments and state.
 
 ### Accepted values
 
