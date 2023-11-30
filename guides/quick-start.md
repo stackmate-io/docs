@@ -6,10 +6,6 @@ description: >-
 
 # Quick Start
 
-{% hint style="info" %}
-If you find this guide too cumbersome, perhaps you could find our [Cloud](https://stackmate.io/cloud/) version more interesting and easier to use. We offer a **trial of 7 days** and **no credit card** is required.
-{% endhint %}
-
 ### Deploy MySQL and Redis on AWS in just a moment
 
 As a quick start, we'll deploy a MySQL and a Redis database on AWS, you may follow along with your favorite text editor and command line to replicate this example.
@@ -41,6 +37,10 @@ environments:
 ```
 
 ### 2. Create the state bucket and DynamoDB lock table
+
+{% hint style="info" %}
+If you find this guide too cumbersome, perhaps you could find our [Cloud](https://stackmate.io/cloud/) version more interesting and easier to use. We offer a **trial of 7 days** and **no credit card** is required.
+{% endhint %}
 
 All you need to do before hand is to create an S3 bucket that will store the Terraform state and a DynamoDB table to use for state locking, so that deployments are atomic and nobody in your team deploys a conflicting version.  To create a state bucket you have two options:
 

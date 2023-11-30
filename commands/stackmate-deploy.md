@@ -1,5 +1,9 @@
 # stackmate deploy
 
+{% hint style="info" %}
+If you're looking to deploy every time you push a new commit, perhaps you might want to check our [Cloud](https://stackmate.io/cloud/) version out. We offer a **trial of 7 days** and **no credit card** is required.
+{% endhint %}
+
 The `stackmate deploy` command applies changes to an environment specified. It is responsible for deploying and modifying your infrastructure.
 
 ### Usage
