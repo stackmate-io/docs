@@ -42,7 +42,10 @@ environments:
 
 ### 2. Create the state bucket and DynamoDB lock table
 
-All you need to do before hand is to create an S3 bucket that will store the Terraform state and a DynamoDB table to use for state locking, so that deployments are atomic and nobody in your team deploys a conflicting version. You can follow our super easy [guide](../appendix/preparing-for-deployment.md) to create your bucket and DynamoDB table.&#x20;
+All you need to do before hand is to create an S3 bucket that will store the Terraform state and a DynamoDB table to use for state locking, so that deployments are atomic and nobody in your team deploys a conflicting version.  To create a state bucket you have two options:
+
+* The automated way, by copying this [terraform script](https://github.com/stackmate-io/stackmate/blob/main/utilities/create-s3-state/main.tf) (provided by yours truly) and running `terraform apply` (you will be prompted to enter the bucket and table name). You can then copy the bucket and table name to your stackmate configuration.
+* Following this [excellent tutorial](https://medium.com/all-things-devops/how-to-store-terraform-state-on-s3-be9cd0070590).
 
 Note: you can also use an existing bucket by specifying a different key as described in our [state configuration](../configuration/state.md) guide.
 

@@ -31,6 +31,4 @@
 
 ## Appendix
 
-* [Preparing for deployment](appendix/preparing-for-deployment.md)
-* [Security Considerations](appendix/security-considerations.md)
 * [License](appendix/license.md)
