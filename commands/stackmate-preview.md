@@ -1,17 +1,18 @@
 # stackmate preview
 
-The `stackmate service` command introduces a new service to the stack. By default the service is introduced to the `production` stage but you can choose otherwise.
+The `stackmate preview` command shows the changes that will be applied to the stack after you've updated your configuration file
 
 ### Usage
 
 ```
-stackmate service <service type> [--stage production]
+stackmate preview <environment> [-c configuration.yml -d working-directory]
 ```
 
 ### Arguments
 
-* `<service type>` The service to add to the stage. For a full list of the supported services, please check out the [stages configuration](../configuration/environments.md) for supported options.
+* `<environment>` The environment to preview the changes for
 
 ### Options
 
-* `--stage` should be one of the stages declared inside your `.stackmate/config.yml` file, for example `production` or `staging`. By default the `production` stage will be used
+* `--configuration <file>, -c <file>` the configuration file to be used for this operation. By default `.stackmate/config.yml` is used
+* `--directory <dir>, -d <dir>` the directory to use as a working one, where the [output-files.md](../guides/output-files.md "mention") will be generated&#x20;

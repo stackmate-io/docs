@@ -1,18 +1,22 @@
-# stackmate copy
+# stackmate destroy
 
-The `stackmate copy` command copies a stage and adds it to the configuration file.
+{% hint style="danger" %}
+**WARNING!** This will tear down your entire infrastructure **without any confirmation**, use when you're completely sure about what you're doing!
+{% endhint %}
+
+The `stackmate destroy` command applies **completely destroys your entire infrastructure**.
 
 ### Usage
 
 ```
-stackmate copy <source> <target> [...arguments]
+stackmate destroy <environment> [-c configuration.yml -d working-directory]
 ```
 
 ### Arguments
 
-* `<source>` - Which stage to copy. It should be one of the stages that are already available in your `.stackmate/config.yml` file
-* `<target>` should be the name of the stage to add and it should not already be present on your `.stackmate/config.yml` files
+* `<environment>` The environment to destroy
 
 ### Options
 
-* `--skip service1, service2` - Comma separated list of the services to skip when inheriting from the base stage. For example, you can base the new stage onto `production` but choose to skip the `cache` service
+* `--configuration <file>, -c <file>` the configuration file to be used for this operation. By default `.stackmate/config.yml` is used
+* `--directory <dir>, -d <dir>` the directory to use as a working one, where the [output-files.md](../guides/output-files.md "mention") will be generated&#x20;

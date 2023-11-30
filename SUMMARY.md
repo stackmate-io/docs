@@ -19,13 +19,8 @@
 
 * [Available services](services/available-services.md)
 * [Basic Options](services/basic-options.md)
-* [Database services](services/database-services/README.md)
-  * [MariaDB](services/database-services/mariadb.md)
-  * [MySQL](services/database-services/mysql.md)
-  * [PostgreSQL](services/database-services/postgresql.md)
-* [Cache Services](services/cache-services/README.md)
-  * [Memcache](services/cache-services/memcache.md)
-  * [Redis](services/cache-services/redis.md)
+* [Database services](services/database-services.md)
+* [Cache Services](services/cache-services.md)
 * [Object storage](services/object-storage.md)
 
 ## Commands
@@ -36,6 +31,6 @@
 
 ## Appendix
 
-* [License](appendix/license.md)
 * [Preparing for deployment](appendix/preparing-for-deployment.md)
 * [Security Considerations](appendix/security-considerations.md)
+* [License](appendix/license.md)

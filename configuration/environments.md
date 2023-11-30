@@ -15,7 +15,7 @@ As you can see, each environment is added as a key to the `environments` object 
 
 ### Service configuration
 
-You can find more information on how to configure your services on the available services configuration page, or by visiting each service's documentation page.
+You can find more information on how to configure your services on the [available-services.md](../services/available-services.md "mention") configuration page, or by visiting each service's documentation page.
 
 ### Example
 
