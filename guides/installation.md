@@ -11,7 +11,7 @@ Installing stackmate is a simple, straight forward process where all you need is
 You can install stackmate through NPM by using the following command:
 
 ```
-npm install -g @stackmate/cli
+npm install -g @stackmate/stackmate
 ```
 
 ### Installation as a global package through Yarn
@@ -19,7 +19,7 @@ npm install -g @stackmate/cli
 Same for yarn:
 
 ```
-yarn global add @stackmate/cli
+yarn global add @stackmate/stackmate
 ```
 
 ### Direct usage through NPX
@@ -27,7 +27,7 @@ yarn global add @stackmate/cli
 We recommend that you install stackmate globally, however if you don't want to or if you just wanna give it a quick spin, feel free to run the package directly through `npx` using the following command:
 
 ```
-npx @stckmate/cli [preview / deploy ...] <environment> [...options]
+npx @stackmate/stackmate [preview / deploy ...] <environment> [...options]
 ```
 
 {% hint style="info" %}

@@ -54,13 +54,13 @@ Note: you can also use an existing bucket by specifying a different key as descr
 You are now ready to deploy your infrastructure! All you need to do is run:
 
 ```
-npx @stackmate/cli deploy production
+npx @stackmate/stackmate deploy production
 ```
 
 If your configuration file is stored in a location other than `.stackmate/config.yml`, you can specify the configuration file by running
 
 ```
-npx @stackmate/cli deploy production -c <my-configuration.yml>
+npx @stackmate/stackmate deploy production -c <my-configuration.yml>
 ```
 
 ### What you get after the deployment

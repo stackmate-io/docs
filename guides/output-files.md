@@ -5,7 +5,7 @@ Stackmate generates configuration files when running any of its commands. Let's 
 The default location would be right next to your configuration file, but you can specify a different directory when running the commands, for example:
 
 ```
-npx @stackmate/cli -c myconfig.yml -d stackmate/
+npx @stackmate/stackmate -c myconfig.yml -d stackmate/
 ```
 
 Assuming that you are deploying a simple web application, you can use `.stackmate` as a configuration directory that holds your `config.yml` configuration file and the generated stacks.
