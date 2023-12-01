@@ -3,7 +3,7 @@
 ## Guides
 
 * [Introduction](README.md)
-* [Quick Start](guides/quick-start.md)
+* [Getting started](guides/getting-started.md)
 * [Installation](guides/installation.md)
 * [Configuration](guides/configuration.md)
 * [Output files](guides/output-files.md)
