@@ -2,26 +2,20 @@
 
 ## Guides
 
-* [Introduction](README.md)
-* [Getting started](guides/getting-started.md)
-* [Installation](guides/installation.md)
-* [Configuration](guides/configuration.md)
-* [Output files](guides/output-files.md)
+* [Getting started](README.md)
+* [What is stackmate](guides/what-is-stackmate.md)
 
 ## Configuration
 
-* [state](configuration/state.md)
-* [environments](configuration/environments.md)
-* [provider](configuration/provider.md)
-* [region](configuration/region.md)
-
-## Services
-
-* [Available services](services/available-services.md)
-* [Basic Options](services/basic-options.md)
-* [Database services](services/database-services.md)
-* [Cache Services](services/cache-services.md)
-* [Object storage](services/object-storage.md)
+* [Configuration File](configuration/configuration-file/README.md)
+  * [state](configuration/configuration-file/state.md)
+  * [environments](configuration/configuration-file/environments.md)
+  * [provider](configuration/configuration-file/provider.md)
+  * [region](configuration/configuration-file/region.md)
+* [Basic Options](configuration/basic-options.md)
+* [Database services](configuration/database-services.md)
+* [Cache Services](configuration/cache-services.md)
+* [Object storage](configuration/object-storage.md)
 
 ## Commands
 
@@ -31,4 +25,6 @@
 
 ## Appendix
 
+* [Installation](appendix/installation.md)
+* [Output files](appendix/output-files.md)
 * [License](appendix/license.md)

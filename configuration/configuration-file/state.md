@@ -1,7 +1,7 @@
 # state
 
 {% hint style="info" %}
-You can deploy the state bucket and lock table by using [these instructions](../guides/getting-started.md#2.-create-the-state-bucket-and-dynamodb-lock-table).
+You can deploy the state bucket and lock table by using [these instructions](../../#2.-create-the-state-bucket-and-dynamodb-lock-table).
 {% endhint %}
 
 The `state` configuration option, is an `Object` which defines where the [Terraform State](https://www.terraform.io/language/state) should be stored after each deployment.&#x20;
@@ -26,6 +26,6 @@ For storing the state on an AWS S3 bucket, you need to specify an object contain
 state:
   bucket: my-awesome-project-state-bucket
   lockTable: stackmate-state-lock
+  # 👇 this is optional, by default it will be set to eg. production/stackmate.tfstate
   statePath: my-cool-project.tfstate
-  provider: aws # you don't have to specify this if the default provider is set to "aws"
 ```

@@ -1,4 +1,4 @@
-# Configuration
+# Configuration File
 
 {% hint style="info" %}
 [Stackmate Cloud](https://stackmate.io/cloud/) replaces the configuration file and command line with a simple to use interface and automatic deployments. We offer a **trial of 7 days** and **no credit card** is required.
@@ -12,10 +12,10 @@ The configuration file can be either a YAML or JSON file and examples are provid
 
 The stackmate configuration file is designed to be as simple and straight-forward as it gets. The following list summarizes the configuration attributes that you can apply and you can find more details in the corresponding sections.
 
-* [`state`](../configuration/state.md) - _Required_ - The state storage configuration. _Applies to all environments_
-* [`environments`](../configuration/environments.md) - _Required_ - The environments and list of services that are available
-* [`provider`](../configuration/provider.md) - _Optional_ - The default cloud provider for the services deployed (by default we're using `aws`)
-* [`region`](../configuration/region.md) - _Optional_ - The default region to deploy the services within (by default we're using `eu-central-1`)
+* [`state`](state.md) - _Required_ - The state storage configuration. _Applies to all environments_
+* [`environments`](environments.md) - _Required_ - The environments and list of services that are available
+* [`provider`](provider.md) - _Optional_ - The default cloud provider for the services deployed (by default we're using `aws`)
+* [`region`](region.md) - _Optional_ - The default region to deploy the services within (by default we're using `eu-central-1`)
 
 ### Configuration example
 
