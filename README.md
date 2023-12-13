@@ -2,9 +2,9 @@
 
 ### What is Stackmate?
 
-Stackmate is a free, open source tool that helps busy professionals deploy their cloud infrastructure without doing much. It abstracts and simplifies resource creation, modification and destruction in an intuitive way.
+Stackmate is a free, open source tool that helps busy professionals deploy their cloud infrastructure without doing much. It abstracts and simplifies resource creation, modification and destruction in an intuitive way, by introducing a really simple configuration file.
 
-The reasoning behind Stackmate is that most of the times, all developers want is to simply deploy their database, cache or object storage services, without having to read the manual or go through complex DevOps processes.
+The reasoning behind Stackmate is that most of the times, all developers want, is to simply deploy their application code, database, cache or object storage services, without having to read the manual or going through complex DevOps processes.
 
 ### Who is Stackmate for?
 
@@ -26,6 +26,10 @@ After you create the configuration file, you may use the `deploy` command to pro
 * Stackmate will trigger CDKTF which will look for your system's Terraform executable to provision your cloud resources
 * It will store the [Terraform State](https://www.terraform.io/language/state/remote) to the corresponding location as per your configuration.
 * It will store random generated secrets to a secure remote location (for example AWS Secrets Manager) so that you can securely view and rotate them.
+
+{% hint style="info" %}
+Follow our [getting-started.md](guides/getting-started.md "mention") guide to learn more!
+{% endhint %}
 
 Once your stack has successfully been deployed, any modifications you make on the configuration file, will be reflected on your cloud infrastructure the next time you re-run the `deploy` command and any resource deleted from the configuration, will also be destroyed once you re-deploy.
 
