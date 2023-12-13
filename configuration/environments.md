@@ -21,12 +21,12 @@ Every service on a stackmate configuration, should have a unique name and can be
 
 * `type` - The service's type. It should be one of the services available. Acceptable values are:&#x20;
   * `application`  - Configures an Application service, an application running on a container
-  * `object-store` - Configures an [object store](../object-storage.md) service like AWS S3
-  * `memcached` - Configures a managed [Memcached](../cache-services.md) cluster service (eg. AWS Elasticache)&#x20;
-  * `mariadb` - Configures a managed [MariaDB](../database-services.md) instance (eg. MariaDB on AWS RDS)
-  * `mysql` - Configures a managed MySQL instance (eg. MySQL on AWS RDS)
-  * `postgresql` - Configures a managed PostgreSQL instance (eg. PostgreSQL on AWS RDS)
-  * `redis` - Configures a managed Redis instance (eg. AWS Elasticache)
+  * `object-store` - Configures an [object store](../services/object-storage.md) service like AWS S3
+  * `memcached` - Configures a managed [Memcached](../services/cache-services.md) cluster service (eg. AWS Elasticache)&#x20;
+  * `mariadb` - Configures a managed [MariaDB](../services/database-services.md) instance (eg. MariaDB on AWS RDS)
+  * `mysql` - Configures a managed [MySQL](../services/database-services.md) instance (eg. MySQL on AWS RDS)
+  * `postgresql` - Configures a managed [PostgreSQL](../services/database-services.md) instance (eg. PostgreSQL on AWS RDS)
+  * `redis` - Configures a managed [Redis](../services/cache-services.md) instance (eg. AWS Elasticache)
 
 {% hint style="info" %}
 You can find more information for each service-specific options, on the corresponding page
@@ -46,8 +46,8 @@ These configuration options are available across all services on stackmate, and 
 
 Stackmate supports the following services that you can use in your environments configuration:
 
-* [Database Services](../database-services.md)
-* [Cache Services](../cache-services.md)
+* [Database Services](../services/database-services.md)
+* [Cache Services](../services/cache-services.md)
 * [Object storage](https://app.gitbook.com/o/1hvtqlSFUrlyNGJZFoLw/s/-MZRy1bgyIc6l7rYOrXd/\~/changes/61/services/object-storage)
 
 You can find all the available options for every service on the corresponding page

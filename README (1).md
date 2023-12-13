@@ -28,7 +28,7 @@ After you create the configuration file, you may use the `deploy` command to pro
 * It will store random generated secrets to a secure remote location (for example AWS Secrets Manager) so that you can securely view and rotate them.
 
 {% hint style="info" %}
-Follow our [..](../ "mention") guide to learn more!
+Follow our [.](./ "mention") guide to learn more!
 {% endhint %}
 
 Once your stack has successfully been deployed, any modifications you make on the configuration file, will be reflected on your cloud infrastructure the next time you re-run the `deploy` command and any resource deleted from the configuration, will also be destroyed once you re-deploy.

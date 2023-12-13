@@ -1,6 +1,10 @@
 # Cache Services
 
-Stackmate offers infrastructure deployment for major cache services, the following configuration is supported:
+Stackmate offers infrastructure deployment for major managed cache services (like AWS Elasticache for example)
+
+### What you get when introducing this service to your configuration
+
+* A managed cache instance with sane defaults
 
 ### Required attributes
 
@@ -14,7 +18,7 @@ Stackmate offers infrastructure deployment for major cache services, the followi
 * `port` - **number** - The port to use. By default, `6379` is assigned to `redis` and `11211` is assigned to `memcached`
 * `monitoring` - **object** - Any monitoring options available for the service. Example configuration is shown below
 
-The typical [basic-options.md](basic-options.md "mention") apply here too.
+The typical [Common Service Options](../configuration/environments.md#common-service-options) apply here too.
 
 ### Example configuration
 

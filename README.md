@@ -1,6 +1,6 @@
 # Getting started
 
-### Deploy MySQL and Redis on AWS in just a moment
+### Deploy MySQL and Redis on AWS in less than 10 lines of code
 
 Follow this simple guide to deploy a MySQL and a Redis instance on **your** AWS account. By the end of this guide, you'll have a MySQL instance running on RDS and a Redis cluster on Elasticache.What you'll need:
 
@@ -11,8 +11,8 @@ Follow this simple guide to deploy a MySQL and a Redis instance on **your** AWS 
 
 Here's what you'll get after you've finished this guide:
 
-* A MySQL database instance on RDS, within the AWS free tier to help run in sane costs
-* A Redis instance on Elasticache, within the AWS free tier
+* A [MySQL database](services/database-services.md) instance on RDS, within the AWS free tier to help run in sane costs
+* A [Redis instance](services/cache-services.md) on Elasticache, within the AWS free tier
 * A VPC and Internet Gateway to keep your database instances isolated and secure
 * Your credentials securely stored on AWS Secrets Manager
 
@@ -56,13 +56,13 @@ environments:
 
 ```
 
-**Quick note**: By default your resources are deployed in a [VPC,](https://aws.amazon.com/vpc/) meaning that they're isolated from the outside world but all resources deployed by Stackmate, can connect with each other. If you need to allow connections from a resource that's not deployed by Stackmate, consider adding the `externalLinks` attribute to the service as documented in [basic-options.md](configuration/basic-options.md "mention").
+**Quick note**: By default your resources are deployed in a [VPC,](https://aws.amazon.com/vpc/) meaning that they're isolated from the outside world but all resources deployed by Stackmate, can connect with each other. If you need to allow connections from a resource that's not deployed by Stackmate, consider adding the `externalLinks` attribute to the service as documented in the [common service options](configuration/environments.md#common-service-options) section for `environments`.
 
 ### 2. Create the directory to store the Terraform state in
 
 Terraform requires a [state](https://developer.hashicorp.com/terraform/language/state) file to be present, so that it knows what the desired state of your infrastructure will be every time. For the sake of this guide, we will be storing our state files locally, but at the end of this guide, we'll see how we can use an AWS S3 bucket to securely store our states in.
 
-Please note that as described in [#should-i-commit-the-files-that-are-generated-by-stackmate](appendix/output-files.md#should-i-commit-the-files-that-are-generated-by-stackmate "mention"), we should **NEVER** commit our state to version control and this is why the directory is set outside our repository. Now let's go ahead and create the directory:
+Please note that as described in [#should-i-commit-the-files-that-are-generated-by-stackmate](guides/output-files.md#should-i-commit-the-files-that-are-generated-by-stackmate "mention"), we should **NEVER** commit our state to version control and this is why the directory is set outside our repository. Now let's go ahead and create the directory:
 
 ```bash
 $ mkdir -p ~/.stackmate-states/my-cool-project
@@ -181,8 +181,8 @@ Our next deployments will store the state in S3 and the state will be locked in 
 
 Next steps
 
-* You can check out the additional configuration in [Database services configuration page](configuration/database-services.md) or [Cache services configuration page](configuration/cache-services.md) and update the service section on `.stackmate/config.yml` accordingly
+* You can check out the additional configuration in [Database services configuration page](services/database-services.md) or [Cache services configuration page](services/cache-services.md) and update the service section on `.stackmate/config.yml` accordingly
 * You can add more [services](broken-reference) to your configuration
-* You can add more [environments](configuration/configuration-file/environments.md) to your project, for example a `staging` environment
-* [Install](appendix/installation.md) `stackmate` globally to avoid using `npx @stackmate/stackmate`
+* You can add more [environments](configuration/environments.md) to your project, for example a `staging` environment
+* [Install](guides/installation.md) `stackmate` globally to avoid using `npx @stackmate/stackmate`
 * Tweet about [@stackmate](https://twitter.com/stackmate), raise an [issue](https://github.com/stackmate-io/stackmate/issues), or view our [roadmap](https://github.com/stackmate-io/stackmate/projects).

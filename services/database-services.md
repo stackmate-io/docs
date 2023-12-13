@@ -1,6 +1,10 @@
 # Database services
 
-Stackmate offers infrastructure deployment for major databases, the following configuration is supported:
+Stackmate offers infrastructure deployment for major managed database services (like AWS RDS for example)
+
+### What you get when introducing this service to your configuration
+
+* A managed database instance with sane defaults
 
 ### Required attributes
 
@@ -8,14 +12,15 @@ Stackmate offers infrastructure deployment for major databases, the following co
 
 ### Optional attributes
 
-* `size` - **string** - The instance size. Should be one of the instances the provider has available
+* `provider` - **string** - by default is set to `aws`
+* `size` - **string** - The instance size. Should be one of the instances the cloud provider has available
 * `version` - **string** - The database version to use. These are dictated by the cloud provider (eg. AWS) and it's one of the versions they currently support.
 * `storage` - **number** - The size of the storage space in Gigabytes
 * `database` - **string** - The name of the database to deploy
 * `port` - **number** - The port to use. By default, `3306` is assigned to `mysql` and `mariadb` and `5432` for `postgresql`
 * `monitoring` - **object** - Any monitoring options available for the service. Example configuration is shown below
 
-The typical [basic-options.md](basic-options.md "mention") apply here too.
+The typical [Common Service Options](../configuration/environments.md#common-service-options) apply here too.
 
 ### Credentials for the root user:
 

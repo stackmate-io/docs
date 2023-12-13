@@ -1,7 +1,7 @@
 # state
 
 {% hint style="info" %}
-You can deploy the state bucket and lock table by using [these instructions](../../#2.-create-the-state-bucket-and-dynamodb-lock-table).
+You can deploy the state bucket and lock table by using [these instructions](../#2.-create-the-state-bucket-and-dynamodb-lock-table).
 {% endhint %}
 
 The `state` configuration option, is an `Object` which defines where the [Terraform State](https://www.terraform.io/language/state) should be stored after each deployment.&#x20;

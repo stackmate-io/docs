@@ -3,19 +3,21 @@
 ## Guides
 
 * [Getting started](README.md)
-* [What is stackmate](guides/what-is-stackmate.md)
+* [What is stackmate](<README (1).md>)
+* [Installation](guides/installation.md)
+* [Output files](guides/output-files.md)
 
 ## Configuration
 
-* [Configuration File](configuration/configuration-file/README.md)
-  * [state](configuration/configuration-file/state.md)
-  * [environments](configuration/configuration-file/environments.md)
-  * [provider](configuration/configuration-file/provider.md)
-  * [region](configuration/configuration-file/region.md)
-* [Basic Options](configuration/basic-options.md)
-* [Database services](configuration/database-services.md)
-* [Cache Services](configuration/cache-services.md)
-* [Object storage](configuration/object-storage.md)
+* [Configuration File](guides/configuration.md)
+  * [state](configuration/state.md)
+  * [environments](configuration/environments.md)
+  * [provider](configuration/provider.md)
+  * [region](configuration/region.md)
+* [Application Services](configuration/application-services.md)
+* [Database services](services/database-services.md)
+* [Cache Services](services/cache-services.md)
+* [Object storage](services/object-storage.md)
 
 ## Commands
 
@@ -23,8 +25,11 @@
 * [stackmate deploy](commands/stackmate-deploy.md)
 * [stackmate destroy](commands/stackmate-destroy.md)
 
+## How to
+
+* [Use your own VPC on AWS](how-to/use-your-own-vpc-on-aws.md)
+* [Handle SSL failures for AWS](how-to/handle-ssl-failures-for-aws.md)
+
 ## Appendix
 
-* [Installation](appendix/installation.md)
-* [Output files](appendix/output-files.md)
 * [License](appendix/license.md)

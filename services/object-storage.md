@@ -1,6 +1,10 @@
 # Object storage
 
-Stackmate offers infrastructure deployment for object storage, the following configuration is supported:
+Stackmate offers infrastructure deployment for object storage services (like AWS S3 for example)
+
+### What you get when introducing this service to your configuration
+
+* As many object storage buckets you've specified in your configuration with versioning, encryption or public access configured
 
 ### Required attributes
 
@@ -11,7 +15,7 @@ Stackmate offers infrastructure deployment for object storage, the following con
   * `encrypted` - **boolean, optional** - whether objects are encrypted in the bucket, `false` by default
   * `publicRead` - **boolean, optional** - whether the objects are publicly available for reading, `false` by default
 
-The typical [basic-options.md](basic-options.md "mention") apply here too.
+The typical [Common Service Options](../configuration/environments.md#common-service-options) apply here too.
 
 ### Accessing the bucket
 
